@@ -1,0 +1,386 @@
+
+.login-container {
+    /*box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-clip: padding-box;
+    margin: 180px auto;
+    width: 350px;
+    padding: 35px 35px 15px 35px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 0 25px #cac6c6;
+    .title {
+      margin: 0px auto 40px auto;
+      text-align: center;
+      color: #505458;
+    }
+    .remember {
+      margin: 0px 0px 35px 0px;
+    }
+  }
+.container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  .header {
+    height: 60px;
+    line-height: 60px;
+    background: #1f5d86;
+    color:#fff;
+    .userinfo {
+      text-align: right;
+      padding-right: 35px;
+      float: right;
+      .userinfo-inner {
+        cursor: pointer;
+        color:#fff;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+          margin: 10px 0px 10px 10px;
+          float: right;
+        }
+      }
+    }
+    .logo {
+      //width:230px;
+      height:60px;
+      padding-left:20px;
+      padding-right:20px;
+      border-color: rgba(238,241,146,0.3);
+      border-right-width: 1px;
+      border-right-style: solid;
+      img {
+        width: 40px;
+        float: left;
+        margin: 10px 10px 10px 18px;
+      }
+      .txt {
+        color:#fff;
+      }
+    }
+    .logo-width{
+      width:230px;
+    }
+    .logo-collapse-width{
+      width:60px
+    }
+    .tools{
+      padding: 0px 23px;
+      width:14px;
+      height: 60px;
+      line-height: 60px;
+      cursor: pointer;
+    }
+  }
+  .main {
+    display: flex;
+    // background: #324057;
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    overflow: hidden;
+    aside {
+      flex:0 0 230px;
+      width: 230px;
+      // position: absolute;
+      // top: 0px;
+      // bottom: 0px;
+      
+      .el-menu{
+        height: 100%;
+        background: #ecf1f5;
+      }
+      .collapsed{
+        width:60px;
+        .item{
+          position: relative;
+        }
+        .submenu{
+          position:absolute;
+          top:0px;
+          left:60px;
+          z-index:99999;
+          height:auto;
+          display:none;
+        }
+
+      }
+    }
+    .menu-collapsed{
+      flex:0 0 60px;
+      width: 60px;
+    }
+    .menu-expanded{
+      flex:0 0 230px;
+      width: 230px;
+    }
+    .content-container {
+      // background: #f1f2f7;
+      flex:1;
+      // position: absolute;
+      // right: 0px;
+      // top: 0px;
+      // bottom: 0px;
+      // left: 230px;
+      overflow-y: scroll;
+      padding: 20px;
+      .breadcrumb-container {
+        //margin-bottom: 15px;
+        .title {
+          width: 200px;
+          float: left;
+          color: #475669;
+        }
+        .breadcrumb-inner {
+          float: left;
+        }
+      }
+      .content-wrapper {
+        background-color: #fff;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+.item-path-name{
+  width: 10%;
+  text-align: center;
+  display: inline-block;
+  padding: 0 !important;
+}
+.elmenutime{
+  height: 50px;
+  line-height: 50px;
+  background: #e4e8f1;
+}
+#app {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+.el-submenu [class^=fa] {
+	vertical-align: baseline;
+	margin-right: 10px;
+}
+
+.el-menu-item [class^=fa] {
+	vertical-align: baseline;
+	margin-right: 10px;
+}
+
+.toolbar {
+	background: #f2f2f2;
+	padding: 10px;
+	//border:1px solid #dfe6ec;
+  // margin: 10px 0px;
+  border: 1px solid #e3e3e3;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+	.el-form-item {
+		margin-bottom: 10px;
+	}
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: all .2s ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+	opacity: 0;
+}
+.float-right{
+  float: right;
+}
+/********** 页面头部 start   ********/
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.form-group {
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+.reload{
+  min-width: 60px;
+  max-width: 75px;
+}
+/********** 页面头部 end   ********/
+.el-pagination{
+  float: right;
+}
+.formhead {
+  color: #f5f5f5;
+  margin-right: 10px;
+}
+
+.menu-grunt{
+  width: 100% !important;
+}
+.home-handes{
+  display: block !important;
+}
+/********** 弹窗 start   ********/
+.margin-top-beg {
+  text-align: center;
+  padding: 5px 0;
+  background: #e4e4e4;
+}
+.text-center{
+  text-align: center
+}
+.detail .el-form-item{
+  margin-bottom:0 !important;
+}
+.detail .el-form-item__label{
+  color:#000000;
+  font-weight: 700;
+}
+/********** 弹窗 end   ********/
+.msg-textarea{
+  height: 350px;
+  border-color: rgb(227, 231, 236);
+  width: 100%;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.msg-button{
+  text-align: center;
+  margin-top: 20px;
+}
+
+/********** 分页 start   ********/
+.pull-right {
+  float: right;
+}
+.pager-margin-top{
+  margin-top:10px; 
+}
+.pageinput{
+  width: 100px;
+  border-radius: 5px;
+}
+.pageinput input{
+  text-align: center;
+}
+/********** 分页 end   ********/
+.menu-item-home{
+  padding-left: 20px;
+  height: 56px;
+  line-height: 56px;
+  padding: 0 20px;
+}
+/*************  谷歌验证配置页面 start ******************/
+.googleauth-item {
+    border: 1px solid rgb(204, 204, 204);
+    text-align: center; 
+    margin-left: 10px;  
+}
+.googleauth-item-4{
+  margin-left: 10px;
+  border: 1px solid #ccc;
+}
+.googleauth-text{
+  border-bottom: 1px dashed;
+  padding-left: 10px;
+}
+.googleauth-token{
+  word-break: break-all;
+  padding-bottom: 5px;
+}
+.padding-bottom-20{
+  padding-bottom: 20px;
+}
+.padding-20{
+  padding: 20px;
+}
+.googleauth-qrcode{
+  width: 200px;
+  height: 200px;
+  display: table-cell;
+  margin: auto;
+}
+.googleauth-success{
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.el-button{
+  margin-bottom: 3px;
+}
+/*************  谷歌验证配置页面 end ******************/
+/*************  弹窗遮罩 start ******************/
+.left-menu-expanded .v-modal,.left-menu-expanded .el-dialog__wrapper{
+  left: 230px !important;
+  top: 60px !important;
+}
+.left-menu-collapsed .v-modal,.left-menu-collapsed .el-dialog__wrapper{
+  left:60px !important;
+  top: 60px !important;
+}
+
+
+
+
+/*************  弹窗遮罩 end ******************/
+
+.admingroupuserlists{
+  word-break: break-all;
+}
+.trailer{
+  #myvideo{
+   width: 100%
+  }
+}
+.video-js .vjs-tech{
+  width: 99% !important;
+}
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 178px;
+  height: 178px;
+  line-height: 178px;
+  text-align: center;
+}
+.avatar {
+  width: 178px;
+  height: 178px;
+  display: block;
+}
+.el-table .cell img{
+  width: 100%;
+  height: 100%;
+}
+.el-loading-mask{
+  z-index: 20000 !important;
+}
